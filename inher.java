@@ -36,3 +36,16 @@ class Electriccar  extends car{
     }
 }
 
+
+class PetrolCar extends Car {
+    int fuelLevel;
+
+    public PetrolCar(String brand, int speed, int fuelLevel) {
+        super(brand, speed);
+        this.fuelLevel = fuelLevel;
+    }
+
+    public void refuel() {
+        System.out.println(brand + " is refueling. Fuel: " + fuelLevel + "L");
+    }
+}
