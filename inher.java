@@ -49,3 +49,20 @@ class PetrolCar extends Car {
         System.out.println(brand + " is refueling. Fuel: " + fuelLevel + "L");
     }
 }
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        ElectricCar eCar = new ElectricCar("Tesla", 120, 80);
+        eCar.start();
+        eCar.charge();
+        eCar.display();
+
+        System.out.println("------------------");
+
+        PetrolCar pCar = new PetrolCar("Toyota Carola", 100, 40);
+        pCar.start();
+        pCar.refuel();
+        pCar.display();
+    }
